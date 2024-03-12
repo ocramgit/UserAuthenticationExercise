@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public enum Role {
 
+    //TODO: set permissions to USER on Permission Enum
     USER(Collections.emptySet()),
     ADMIN(
             Set.of(

@@ -1,7 +1,5 @@
 package com.marco.UserAuthExercise.controller;
 
-import com.marco.UserAuthExercise.domain.User;
-import com.marco.UserAuthExercise.role.Role;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -19,6 +17,8 @@ class DashboardControllerTest {
         @Autowired
         private MockMvc mockMvc;
 
+
+        //TODO: H2 memory db
         @Test
         @WithMockUser(username = "user", authorities = "admin:read")
         void testAuthorizedAccessToDashboard() throws Exception {
